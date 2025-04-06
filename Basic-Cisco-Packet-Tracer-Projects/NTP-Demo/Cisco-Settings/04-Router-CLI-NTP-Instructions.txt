@@ -1,0 +1,42 @@
+On Router CLI:
+
+Router>enable
+
+Router#config
+Configuring from terminal, memory, or network [terminal]? terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+
+Router(config)#do show clock
+*0:13:51.405 UTC Mon Mar 1 1993
+
+Router(config)#do show ntp associations
+
+Router(config)#ntp server 192.168.1.5
+
+[ Still Initializing {INIT} ]
+
+Router(config)#do show ntp associations
+
+address         ref clock       st   when     poll    reach  delay          offset            disp
+ ~192.168.1.5   .INIT.          16   -        64      0      0.00           0.00              0.01
+ * sys.peer, # selected, + candidate, - outlyer, x falseticker, ~ configured
+
+[Still Initializing {Clock IP Address present but an offset is present so wait until offset is Zero} ]
+
+Router(config)#do show ntp associations
+
+address         ref clock       st   when     poll    reach  delay          offset            disp
+ ~192.168.1.5   127.127.1.1     1    11       16      1      1.00           1010845905474.00  0.00
+ * sys.peer, # selected, + candidate, - outlyer, x falseticker, ~ configured
+ 
+Router(config)#do show ntp associations
+
+address         ref clock       st   when     poll    reach  delay          offset            disp
+*~192.168.1.5   127.127.1.1     1    4        16      37     0.00           0.00              0.12
+ * sys.peer, # selected, + candidate, - outlyer, x falseticker, ~ configured
+ 
+[ Offset is Zero so run do show clock again to see the Updated Date: ]
+Router(config)#do show clock
+14:34:11.732 UTC Mon Mar 31 2025
+
+[ If Offset is not getting to Zero: Click on the Fast Forward Button besides the Timer and that would speed it up ]
