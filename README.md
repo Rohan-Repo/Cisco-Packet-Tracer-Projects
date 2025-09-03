@@ -9,5 +9,5 @@ A Repo containing mini projects to learn Networking Concepts using Cisco Packet 
 - <b> CPT-Files </b> <i> The Actual Cisco Packet Tracer Files </i>
 
 <h3> Some Reference Playlists I followed </h3>
-[CPT Playlist #1](https://www.youtube.com/playlist?list=PLVFyjfF2Drdt9hXs37KTPTIqtNVCXFfOG) 
-[CPT Playlist #2](https://www.youtube.com/playlist?list=PLSDyGb_vtanx5Ad0S4WxRqTSSH9e34O_M)
+-[CPT Playlist #1](https://www.youtube.com/playlist?list=PLVFyjfF2Drdt9hXs37KTPTIqtNVCXFfOG) 
+-[CPT Playlist #2](https://www.youtube.com/playlist?list=PLSDyGb_vtanx5Ad0S4WxRqTSSH9e34O_M)
